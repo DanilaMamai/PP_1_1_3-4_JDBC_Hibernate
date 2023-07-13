@@ -71,13 +71,7 @@ public class UserDaoJDBCImpl implements UserDao {
 				String lastname = resultSet.getString(3);
 				byte age = resultSet.getByte(4);
 				
-				User user = new User(name, lastname, age) {
-					@Override
-					public String toString() {
-						// TODO Auto-generated method stub
-						return String.format("name: %s, lastname: %s, age: %d", name, lastname, age);
-					}
-				};
+				User user = new User(name, lastname, age);
 
 				users.add(user);
 			}

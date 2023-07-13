@@ -43,7 +43,7 @@ public class Util {
 				
 				sessionFactory = configuration.buildSessionFactory(sr);
 			} catch (Exception e) {
-				// TODO: handle exception
+				System.err.println("ERROR CONNECT DATABASE");
 			}
 		}
 
